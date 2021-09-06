@@ -1,7 +1,5 @@
 from flask import Flask,render_template
-import os
 from flask.globals import request
-import pandas as pd
 import bs_lgc
 
 app = Flask(__name__)
@@ -13,7 +11,7 @@ def search_text():
     coordinate_list = eval(request_data['body']['position'])
     x0,y0,x2,y2 = coordinate_list[0],coordinate_list[1],coordinate_list[2],coordinate_list[3]
     fname = request_data['body']['file_name']
-    result = ' '.join(bs_lgc.get_text(x0,y0,x2,y2,fname))
+    result = bs_lgc.get_text(x0,y0,x2,y2,fname)
     response = {'text':result}
     return response
 
