@@ -1,5 +1,4 @@
 # OCR_details
-
 Prerequisites:
 	
 - miniconda should be installed for python 3.7
@@ -8,8 +7,8 @@ Prerequisites:
 Follow the below steps to execute OCR Code :
 
 1.	Download the zip of the repository OCR_details.
-2.	After extracting the zip there will be a folder named as ...
-3.	Now, copy the input data i.e. csvs folder also into the above extracted folder i.e. 
+2.	After extracting the zip there will be a folder named as OCR_details-main
+3.	Now, copy the input data i.e. csvs folder also into the above extracted folder i.e. OCR_details-main
 4.	After completing the above steps we will create new python environment.
 5.	Here, we are creating python environment using conda and assuming that prerequisites are fulfilled.	
 6.	Create new conda environment to run the application using the below command.
